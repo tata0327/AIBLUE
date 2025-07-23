@@ -361,6 +361,17 @@ blockquote {
   gap: 5px;
 }
 
+.checkbox-container {
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
 .input_label {
   font-size: 0.75rem;
   color: #8B8E98;
@@ -391,10 +402,36 @@ blockquote {
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 
+.input_field_checkbox {
+  width: auto;
+  height: 20px;
+  padding: 0 0 0 10px;
+  outline: none;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  transform: scale(2);
+  transform-origin: center;
+  margin: 0.25em;
+}
+
 .input_field:focus {
   border: 1px solid transparent;
   box-shadow: 0px 0px 0px 2px #242424;
   background-color: transparent;
+}
+
+.terms-of-use {
+  width: auto;
+  height: 200px;
+  overflow: scroll;
+  padding: 10px 10px 10px 10px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  font-size: small;
 }
 
 .sign-in_btn {
